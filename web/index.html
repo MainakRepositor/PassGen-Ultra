@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="/eel.js"></script>
+
+    <title>Password Generator</title>
+  </head>
+  <body>
+        <div class="container">
+            <h2 class="title">Password Generator</h2>
+
+            <div class="length slider" data-min="4" data-max="64">
+                <div class="length__title field-title" data-length='0'>length:</div>
+                <input id="slider" type="range" min="4" max="64" value="32" />
+            </div>
+
+            <div class="settings">
+                <span class="settings__title field-title">settings</span>
+                <div class="setting">
+                    <input type="checkbox" id="uppercase" checked />
+                    <label for="uppercase">Include Uppercase</label>
+                </div>
+                <div class="setting">
+                    <input type="checkbox" id="lowercase" checked />
+                    <label for="lowercase">Include Lowercase</label>
+                </div>
+                <div class="setting">
+                    <input type="checkbox" id="number" checked />
+                    <label for="number">Include Numbers</label>
+                </div>
+                <div class="setting">
+                    <input type="checkbox" id="symbol" checked/>
+                    <label for="symbol">Include Symbols</label>
+                </div>
+            </div>
+
+            <button class="btn generate" id="generate">Generate Password</button>
+
+            <div class="result">
+                <div class="result__title field-title">Generated Password</div>
+                <div class="result__viewbox" id="result"></div>
+            </div>
+
+            
+
+        </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
